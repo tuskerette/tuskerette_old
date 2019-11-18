@@ -1,0 +1,118 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  height: 100%;
+  overflow-x: hidden;
+  padding-top: 50px;
+  width: 100%;
+}
+
+a {
+    color: #B73D82;
+}
+
+a.hover,
+a.visited {
+    color: #000;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+h3,
+h4,
+h5 {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+
+#about {
+  background-color: #FFA299;
+  color: #333;
+  padding: 0 50px 20px;
+}
+
+.navbar {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.navbar-default {
+  border: 0;
+}
+
+.project-container {
+  border-left: 1px solid #633;
+  border-right: 1px solid #633;
+  color: #333;
+  padding: 0 20px 10px;
+}
+
+.footer {
+  color: #000;
+  height: 40px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.my-title {
+  color: #633;
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin-left: 3px;
+}
+
+.my-title span {
+  display: inline-block;
+  letter-spacing: 0;
+  position: relative;
+  -webkit-transition: all 0.2s ease-out;
+}
+
+.my-title span:hover {
+  color: #FFA299;
+  bottom: 5px;
+}
+
+.parallax-window {
+  background: transparent;
+  min-height: 576px;
+}
+
+#projects {
+  height: 100%;
+  padding-top: 60px;
+}
+
+@media (max-width: 600px) {
+  .parallax-window {
+    display: none;
+  }
+
+  #projects {
+    padding-top: 0;
+  }
+}
+
+@media(min-width:767px) {
+  .navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
